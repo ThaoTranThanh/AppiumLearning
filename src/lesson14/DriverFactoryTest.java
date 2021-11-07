@@ -37,6 +37,7 @@ public class DriverFactoryTest  {
         }catch(Exception ignore){}
         finally {
             DriverFactory.stopAppiumServer();
+
         }
     }
 }
