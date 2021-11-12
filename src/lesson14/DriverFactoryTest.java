@@ -1,8 +1,8 @@
 package lesson14;
 
+import driver.DriverFactory;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
-import org.openqa.selenium.By;
 
 import java.util.List;
 
