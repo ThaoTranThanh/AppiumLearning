@@ -23,7 +23,9 @@ public class DriverFactory {
 //        appiumServiceBuilder.withArgument(AndroidServerFlagEx.ALLOW_INSECURE, "chromedriver_autodownload"); //ALLOW insecure chi de dau
 //        appiumServiceBuilder.withArgument(() -> "--chromedriver-executable", "/Users/thao.tran/Downloads/SOURCECODE/chromedriver");
 
-        appiumServiceBuilder.withArgument(AndroidServerFlagEx.CHROMEDRIVER_EXECUTABLE,"/Users/thao.tran/Downloads/SOURCECODE/chromedriver");
+//        appiumServiceBuilder.withArgument(AndroidServerFlagEx.CHROMEDRIVER_EXECUTABLE,"/Users/thao.tran/Downloads/SOURCECODE/chromedriver");
+        appiumServiceBuilder.withArgument(AndroidServerFlagEx.CHROMEDRIVER_EXECUTABLE,
+                System.getProperty("user.dir").concat("/src/driver/chromedriver"));
         appiumServiceBuilder.withIPAddress("127.0.0.1").usingAnyFreePort();
         appiumServer = AppiumDriverLocalService.buildService(appiumServiceBuilder);
         appiumServer.start();
