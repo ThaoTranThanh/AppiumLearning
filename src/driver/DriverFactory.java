@@ -47,7 +47,7 @@ public class DriverFactory {
         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
         desiredCapabilities.setCapability(MobileCapabilityTypeEx.PLATFORM_NAME,"Android");
         desiredCapabilities.setCapability(MobileCapabilityTypeEx.AUTOMATION_NAME,"uiautomator2");
-        desiredCapabilities.setCapability(MobileCapabilityTypeEx.UDID,"emulator-5554");
+        desiredCapabilities.setCapability(MobileCapabilityTypeEx.UDID,"RF8RA15CHBE");
         desiredCapabilities.setCapability(MobileCapabilityTypeEx.APP_ACTIVITY,"com.wdiodemoapp.MainActivity");
         desiredCapabilities.setCapability(MobileCapabilityTypeEx.APP_PACKAGE,"com.wdiodemoapp");
         desiredCapabilities.setCapability(MobileCapabilityTypeEx.NEW_COMMAND_TIMEOUT,120);

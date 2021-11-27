@@ -6,7 +6,7 @@ import io.appium.java_client.android.AndroidDriver;
 
 import java.util.List;
 
-public class DriverFactoryTest  {
+public class DriverFactoryTest {
 
     public static void main(String[] args) {
         DriverFactory.startAppiumServer();
@@ -18,8 +18,8 @@ public class DriverFactoryTest  {
 
 //Take about relative Xpath
             List<MobileElement> credsFormlElem = androidDriver.findElementsByXPath("//android.widget.EditText");
-            final int INPUT_EMAIL_INDEX =0;
-            final int INPUT_PASSWORD_INDEX =1;
+            final int INPUT_EMAIL_INDEX = 0;
+            final int INPUT_PASSWORD_INDEX = 1;
             credsFormlElem.get(INPUT_EMAIL_INDEX).sendKeys("send@mailinator.com");
             credsFormlElem.get(INPUT_PASSWORD_INDEX).sendKeys("987654");
 //            MobileElement emailInputElem = androidDriver.findElementByXPath("//android.widget.EditText[@content-desc='input-email']");
@@ -34,8 +34,8 @@ public class DriverFactoryTest  {
                     androidDriver.findElementByAndroidUIAutomator("new UiSelector().textContains(\"When the device\").className(\"android.widget.TextView\")");
             System.out.println(loginFeatureDes.getText());
             System.out.println(loginFeatureDesUiSelector.getText());
-        }catch(Exception ignore){}
-        finally {
+        } catch (Exception ignore) {
+        } finally {
             DriverFactory.stopAppiumServer();
 
         }
